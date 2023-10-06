@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Alumni Connect</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Alumni Connect</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>About Alumni Connect</h2>
+        <p>Welcome to Alumni Connect, your source for staying connected with fellow alumni.</p>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Professional Development</h3>
+            <p>Join us for a workshop on career development.</p>
+        </div>
+        <div class="event">
+            <h3>Campus Events</h3>
+            <p>Come and celebrate the university's anniversary with us.</p>
+        </div>
+        <div class="event">
+            <h3>Graduation 2023</h3>
+            <p>Attend the graduation of our brightest students that will be graduating this year.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="member">
+            <h3>John Doe</h3>
+            <p>Technical Expertise: Web Development</p>
+            <img src="./elizeu-dias-2EGNqazbAMk-unsplash.jpg" alt="John Doe's Profile Picture">
+        </div>
+        <div class="member">
+            <h3>Abasima Nyuk</h3>
+            <p>Technical Expertise: AR/VR</p>
+            <img src="./fortune-vieyra-xdmtQVVKibU-unsplash.jpg" alt="John Doe's Profile Picture">
+        </div>
+        <div class="member">
+            <h3>Abraham Olawole</h3>
+            <p>Entrepreneur </p>
+            <img src="./mubarak-showole-Ve7xjKImd28-unsplash.jpg" alt="John Doe's Profile Picture">
+        </div>
+    </section>
+
+    <section>
+        <form action="submit_contact_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event">
+                    <option value="Professional Development">Professional Development</option>
+                    <option value="Campus Events">Campus Events</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Alumni Connect</p>
+    </footer>
+</body>
+</html>
