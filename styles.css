@@ -63,6 +63,15 @@ section {
     margin-bottom: 20px;
 }
 
+.event img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .event h3{
     margin-bottom: 20px;
 }
